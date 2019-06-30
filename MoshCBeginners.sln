@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypesAndExpressions", "Mosh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonPrimitiveType", "NonPrimitiveType\NonPrimitiveType.csproj", "{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlow", "ControlFlow\ControlFlow.csproj", "{A189C881-8D21-43A9-9524-C3C179C08E4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}.Debug|x86.Build.0 = Debug|x86
 		{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}.Release|x86.ActiveCfg = Release|x86
 		{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}.Release|x86.Build.0 = Release|x86
+		{A189C881-8D21-43A9-9524-C3C179C08E4A}.Debug|x86.ActiveCfg = Debug|x86
+		{A189C881-8D21-43A9-9524-C3C179C08E4A}.Debug|x86.Build.0 = Debug|x86
+		{A189C881-8D21-43A9-9524-C3C179C08E4A}.Release|x86.ActiveCfg = Release|x86
+		{A189C881-8D21-43A9-9524-C3C179C08E4A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
