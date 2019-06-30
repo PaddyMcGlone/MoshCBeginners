@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypesAndExpressions", "MoshCBeginners\TypesAndExpressions.csproj", "{9DA3C17F-C1C7-4C05-99B7-7364B37B27BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonPrimitiveType", "NonPrimitiveType\NonPrimitiveType.csproj", "{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DA3C17F-C1C7-4C05-99B7-7364B37B27BC}.Debug|x86.ActiveCfg = Debug|x86
+		{9DA3C17F-C1C7-4C05-99B7-7364B37B27BC}.Debug|x86.Build.0 = Debug|x86
+		{9DA3C17F-C1C7-4C05-99B7-7364B37B27BC}.Release|x86.ActiveCfg = Release|x86
+		{9DA3C17F-C1C7-4C05-99B7-7364B37B27BC}.Release|x86.Build.0 = Release|x86
+		{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}.Debug|x86.ActiveCfg = Debug|x86
+		{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}.Debug|x86.Build.0 = Debug|x86
+		{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}.Release|x86.ActiveCfg = Release|x86
+		{2EFC6BF4-DF79-482C-BE58-F6B662ADCC6E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
