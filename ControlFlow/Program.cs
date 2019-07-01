@@ -94,19 +94,28 @@ namespace ControlFlow
             //}
 
             // The continue statement forces the loop of execution to return to the top.
-            while (true)
-            {
-                Console.WriteLine("Please enter your name, enter n/a to terminate.");
-                var name = Console.ReadLine();
+            //while (true)
+            //{
+            //    Console.WriteLine("Please enter your name, enter n/a to terminate.");
+            //    var name = Console.ReadLine();
 
-                if (!String.Equals(name.ToLower(), "n/a"))
-                {
-                    Console.WriteLine($"Echo: {name}");
-                    continue;
-                }
+            //    if (!String.Equals(name.ToLower(), "n/a"))
+            //    {
+            //        Console.WriteLine($"Echo: {name}");
+            //        continue;
+            //    }
 
-                break;
-            }
+            //    break;
+            //}
+
+            // Use the random class to create 'Random ten numbers'
+            var random = new Random();
+            var numbers = new int[10];
+
+            for (int i = 0; i < 10; i++)            
+                numbers[i]= random.Next(10);
+
+            Console.WriteLine(string.Join(" - ", numbers));
         }
     }
 }
