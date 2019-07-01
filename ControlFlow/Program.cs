@@ -81,15 +81,31 @@ namespace ControlFlow
             //    Console.WriteLine("Licence Suspended");
             //else
             //    Console.WriteLine($"Current points {points}");
-            
+
+            // Loop examples & controlling flow.
+            //while (true)
+            //{
+            //    Console.WriteLine("Please enter your name, enter n/a to terminate.");
+            //    var name = Console.ReadLine();
+
+            //    if (String.Equals(name.ToLower(), "n/a")) break;
+
+            //    Console.WriteLine($"Echo: {name}");
+            //}
+
+            // The continue statement forces the loop of execution to return to the top.
             while (true)
             {
                 Console.WriteLine("Please enter your name, enter n/a to terminate.");
                 var name = Console.ReadLine();
 
-                if (String.Equals(name.ToLower(), "n/a")) break;
+                if (!String.Equals(name.ToLower(), "n/a"))
+                {
+                    Console.WriteLine($"Echo: {name}");
+                    continue;
+                }
 
-                Console.WriteLine($"Echo: {name}");
+                break;
             }
         }
     }
