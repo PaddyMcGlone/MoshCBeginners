@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonPrimitiveType", "NonPrim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlow", "ControlFlow\ControlFlow.csproj", "{A189C881-8D21-43A9-9524-C3C179C08E4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlowII", "ControlFlowII\ControlFlowII.csproj", "{5D3091F3-DE86-463B-B0C4-8412C6C45CA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{A189C881-8D21-43A9-9524-C3C179C08E4A}.Debug|x86.Build.0 = Debug|x86
 		{A189C881-8D21-43A9-9524-C3C179C08E4A}.Release|x86.ActiveCfg = Release|x86
 		{A189C881-8D21-43A9-9524-C3C179C08E4A}.Release|x86.Build.0 = Release|x86
+		{5D3091F3-DE86-463B-B0C4-8412C6C45CA7}.Debug|x86.ActiveCfg = Debug|x86
+		{5D3091F3-DE86-463B-B0C4-8412C6C45CA7}.Debug|x86.Build.0 = Debug|x86
+		{5D3091F3-DE86-463B-B0C4-8412C6C45CA7}.Release|x86.ActiveCfg = Release|x86
+		{5D3091F3-DE86-463B-B0C4-8412C6C45CA7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
