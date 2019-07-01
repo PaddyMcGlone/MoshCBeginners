@@ -65,22 +65,32 @@ namespace ControlFlow
             //For every 5km / hr above the speed limit, 1 demerit points should be incurred and displayed on the console.
             //If the number of demerit points is above 12, the program should display License Suspended.
 
-            Console.WriteLine("Please enter the current speed limit.");
-            var limit = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter the current speed limit.");
+            //var limit = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Please enter the speed of a car.");
-            var carSpeed = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter the speed of a car.");
+            //var carSpeed = Convert.ToInt32(Console.ReadLine());
 
-            if (carSpeed < limit)
-                Console.WriteLine("Ok");
+            //if (carSpeed < limit)
+            //    Console.WriteLine("Ok");
 
-            //int points = 1;
-            int points = (carSpeed - limit) / 5;
+            ////int points = 1;
+            //int points = (carSpeed - limit) / 5;
 
-            if (points > 12)
-                Console.WriteLine("Licence Suspended");
-            else
-                Console.WriteLine($"Current points {points}");
+            //if (points > 12)
+            //    Console.WriteLine("Licence Suspended");
+            //else
+            //    Console.WriteLine($"Current points {points}");
+            
+            while (true)
+            {
+                Console.WriteLine("Please enter your name, enter n/a to terminate.");
+                var name = Console.ReadLine();
+
+                if (String.Equals(name.ToLower(), "n/a")) break;
+
+                Console.WriteLine($"Echo: {name}");
+            }
         }
     }
 }
