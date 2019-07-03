@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlowII", "ControlFlo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndLists", "ArraysAndLists\ArraysAndLists.csproj", "{2F76A90F-5CCD-4E1D-99C0-6F30B517965E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndlistsII", "ArraysAndlistsII\ArraysAndlistsII.csproj", "{3519F7C1-DAD5-44B1-A1FC-30CFAC762D27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -37,5 +39,9 @@ Global
 		{2F76A90F-5CCD-4E1D-99C0-6F30B517965E}.Debug|x86.Build.0 = Debug|x86
 		{2F76A90F-5CCD-4E1D-99C0-6F30B517965E}.Release|x86.ActiveCfg = Release|x86
 		{2F76A90F-5CCD-4E1D-99C0-6F30B517965E}.Release|x86.Build.0 = Release|x86
+		{3519F7C1-DAD5-44B1-A1FC-30CFAC762D27}.Debug|x86.ActiveCfg = Debug|x86
+		{3519F7C1-DAD5-44B1-A1FC-30CFAC762D27}.Debug|x86.Build.0 = Debug|x86
+		{3519F7C1-DAD5-44B1-A1FC-30CFAC762D27}.Release|x86.ActiveCfg = Release|x86
+		{3519F7C1-DAD5-44B1-A1FC-30CFAC762D27}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
