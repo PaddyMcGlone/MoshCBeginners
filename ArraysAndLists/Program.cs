@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ArraysAndLists
@@ -25,7 +26,6 @@ namespace ArraysAndLists
             // The copy method
             var newItems = new int[] { 1, 2, 3, 4, 5 };
             var copiedItems = new int[3];
-
             Array.Copy(newItems, copiedItems, 3);
             OutputMessage(copiedItems);
 
@@ -33,6 +33,15 @@ namespace ArraysAndLists
             var myUnsortedArray = new int[] { 7, 6, 5, 1, 23, 9 };
             Array.Sort(myUnsortedArray);
             OutputMessage(myUnsortedArray);
+
+            // Lists - Indexof()
+            var vans = new List<string> { "Ford", "Volkswagen", "Mercedes" };
+            var vw = vans.IndexOf("Volkswagen");
+            Console.WriteLine($"The index of vw {vw}");
+
+            // Lists - Remove()
+            vans.Remove("Ford");
+            Console.WriteLine(vans.Count);
         }
     }
 }
