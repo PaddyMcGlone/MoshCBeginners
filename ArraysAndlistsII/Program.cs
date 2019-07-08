@@ -60,27 +60,42 @@ namespace ArraysAndlistsII
             // 3- Write a program and ask the user to enter 5 numbers.If a number has been previously entered,
             // display an error message and ask the user to re-try. Once the user successfully enters 5 unique numbers, sort them and display the result on the console.
 
-            var count = 1;
+            //var count = 1;
+            //var numbers = new List<int>();
+            //do
+            //{
+            //    Console.WriteLine("Please enter a number");
+            //    var number = Convert.ToInt32(Console.ReadLine());
+
+            //    if (numbers.Contains(number))
+            //    {
+            //        Console.WriteLine("Number previously entered, please re-try");
+            //        continue;
+            //    }
+
+            //    numbers.Add(number);
+            //    count++;
+            //}
+            //while (count <= 5);
+
+            //numbers.Sort();
+            //Console.WriteLine($"Sorted numbers {string.Join("-",numbers)}");
+
+            // 4 - Write a program and ask the user to continuously enter a number or type "Quit" to exit.
+            // The list of numbers may include duplicates.Display the unique numbers that the user has entered.
+
             var numbers = new List<int>();
-            do
+            while (true)
             {
-                Console.WriteLine("Please enter a number");
-                var number = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter a number or type 'quit'");
+                var input = Console.ReadLine();
 
-                if (numbers.Contains(number))
-                {
-                    Console.WriteLine("Number previously entered, please re-try");
-                    continue;
-                }
+                if (string.Equals(input.ToLower(), "quit")) break;
 
-                numbers.Add(number);
-                count++;
+                numbers.Add(Convert.ToInt32(input));               
             }
-            while (count <= 5);
 
-            numbers.Sort();
-            Console.WriteLine($"Sorted numbers {string.Join("-",numbers)}");            
+            Console.WriteLine($"Your numbers {String.Join("-",numbers)}");
         }
-
     }
 }
