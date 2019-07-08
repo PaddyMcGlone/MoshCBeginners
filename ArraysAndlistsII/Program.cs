@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ArraysAndlistsII
 {
@@ -84,18 +85,41 @@ namespace ArraysAndlistsII
             // 4 - Write a program and ask the user to continuously enter a number or type "Quit" to exit.
             // The list of numbers may include duplicates.Display the unique numbers that the user has entered.
 
-            var numbers = new List<int>();
+            //var numbers = new List<int>();
+            //while (true)
+            //{
+            //    Console.WriteLine("Please enter a number or type 'quit'");
+            //    var input = Console.ReadLine();
+
+            //    if (string.Equals(input.ToLower(), "quit")) break;
+
+            //    numbers.Add(Convert.ToInt32(input));               
+            //}
+
+            //Console.WriteLine($"Your numbers {String.Join("-",numbers)}");
+
+            // 5 - Write a program and ask the user to supply a list of comma separated numbers(e.g 5, 1, 9, 2, 10).
+            // If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try;
+            // otherwise, display the 3 smallest numbers in the list.
+            
             while (true)
             {
-                Console.WriteLine("Please enter a number or type 'quit'");
+                Console.WriteLine("Please supply a comma seperated list of numbers");
                 var input = Console.ReadLine();
 
-                if (string.Equals(input.ToLower(), "quit")) break;
+                if (string.IsNullOrWhiteSpace(input) || input.Length < 5)
+                {
+                    Console.WriteLine("Invalid List please re-enter");
+                    continue;
+                }
 
-                numbers.Add(Convert.ToInt32(input));               
+                var numbers = input.Split('-').Select(n => Convert.ToInt32(n)).ToList();
+                numbers.Sort();
+                Console.WriteLine($"The three smallest numbers {string.Join(",",numbers.Take(3))}");
+                break;
             }
 
-            Console.WriteLine($"Your numbers {String.Join("-",numbers)}");
+            
         }
     }
 }
