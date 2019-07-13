@@ -110,17 +110,30 @@ namespace Strings
             // 5 - Write a program and ask the user to enter an English word.Count the number of vowels(a, e, o, u, i) in the word.
             // So, if the user enters "inadequate", the program should display 6 on the console.
 
-            Console.WriteLine("Please enter a word from the english dictionary.");
-            var word = Console.ReadLine();
+            //Console.WriteLine("Please enter a word from the english dictionary.");
+            //var word = Console.ReadLine();
 
-            var vowels = new List<char> { 'a', 'e', 'i', 'o', 'u' };
-            var count = 0;
+            //var vowels = new List<char> { 'a', 'e', 'i', 'o', 'u' };
+            //var count = 0;
 
-            foreach (var item in word)            
-                if (vowels.Contains(item))
-                    count++;
+            //foreach (var item in word)            
+            //    if (vowels.Contains(item))
+            //        count++;
 
-            Console.WriteLine($"Vowel count for word {word} is {count}");
+            //Console.WriteLine($"Vowel count for word {word} is {count}");
+
+            // 6. Write a program to ask a user to enter a word. Determine if the word is a plaindrome, if so display 'yes' or 'no'.
+
+            while (true)
+            {
+                Console.WriteLine("Please enter a word on the console.");
+                var input = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(input)) break;
+
+                var reversed = string.Join("",input.Reverse());
+                var message = string.Equals(input, reversed) ? "is" : "is not";
+                Console.WriteLine($"the word {input} {message} a plaindrome.");
+            }
         }
     }
 }
