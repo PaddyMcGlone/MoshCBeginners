@@ -124,15 +124,25 @@ namespace Strings
 
             // 6. Write a program to ask a user to enter a word. Determine if the word is a plaindrome, if so display 'yes' or 'no'.
 
+            //while (true)
+            //{
+            //    Console.WriteLine("Please enter a word on the console.");
+            //    var input = Console.ReadLine();
+            //    if (string.IsNullOrWhiteSpace(input)) break;
+
+            //    var reversed = string.Join("",input.Reverse());
+            //    var message = string.Equals(input, reversed) ? "is" : "is not";
+            //    Console.WriteLine($"the word {input} {message} a plaindrome.");
+            //}
+
             while (true)
             {
                 Console.WriteLine("Please enter a word on the console.");
                 var input = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(input)) break;
 
-                var reversed = string.Join("",input.Reverse());
-                var message = string.Equals(input, reversed) ? "is" : "is not";
-                Console.WriteLine($"the word {input} {message} a plaindrome.");
+                var message = input != string.Join("", input.Reverse()) ? "True" : "False";
+                Console.WriteLine($"{input} is a plaindrome: {message}");
             }
         }
     }
