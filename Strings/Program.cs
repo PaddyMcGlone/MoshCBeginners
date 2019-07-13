@@ -98,14 +98,29 @@ namespace Strings
             // For example, if the user types: "number of students", display "NumberOfStudents".Make sure that the program is not dependent on the input.
             // So, if the user types "NUMBER OF STUDENTS", the program should still display "NumberOfStudents".
 
-            Console.WriteLine("Enter a few words separated by a space in order to create a PascalWord.");
-            var pascalWords = Console.ReadLine().Split(' ');
-            var message = "";
+            //Console.WriteLine("Enter a few words separated by a space in order to create a PascalWord.");
+            //var pascalWords = Console.ReadLine().Split(' ');
+            //var message = "";
 
-            foreach (var word in pascalWords)
-                message += word.Replace(word[0], char.ToUpper(word[0]));
+            //foreach (var word in pascalWords)
+            //    message += word.Replace(word[0], char.ToUpper(word[0]));
 
-            Console.WriteLine(message);
+            //Console.WriteLine(message);
+
+            // 5 - Write a program and ask the user to enter an English word.Count the number of vowels(a, e, o, u, i) in the word.
+            // So, if the user enters "inadequate", the program should display 6 on the console.
+
+            Console.WriteLine("Please enter a word from the english dictionary.");
+            var word = Console.ReadLine();
+
+            var vowels = new List<char> { 'a', 'e', 'i', 'o', 'u' };
+            var count = 0;
+
+            foreach (var item in word)            
+                if (vowels.Contains(item))
+                    count++;
+
+            Console.WriteLine($"Vowel count for word {word} is {count}");
         }
     }
 }
