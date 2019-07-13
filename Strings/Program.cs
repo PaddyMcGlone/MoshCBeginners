@@ -46,20 +46,43 @@ namespace Strings
             //   For example, if the input is "5-6-7-8-9" or "20-19-18-17-16", display a message: "Consecutive"; otherwise, display "Not Consecutive".
 
             // Prompt
-            Console.WriteLine("Please enter a few numbers separated by a hypen.");
-            var input = Console.ReadLine();
+            //Console.WriteLine("Please enter a few numbers separated by a hypen.");
+            //var input = Console.ReadLine();
 
-            var numbers = input.Split('-').Select(n => Convert.ToInt32(n)).ToList();            
+            //var numbers = input.Split('-').Select(n => Convert.ToInt32(n)).ToList();            
 
-            var previousNumber = numbers[0];
-            var message = "";
-            foreach (var currentNumber in numbers)
+            //var previousNumber = numbers[0];
+            //var message = "";
+            //foreach (var currentNumber in numbers)
+            //{
+            //    message = currentNumber > previousNumber ? "Consecutive" : "Not Consecutive";
+            //    previousNumber = currentNumber;
+            //}
+
+            //Console.WriteLine($"The numbers you entered are {message}");
+
+            // 2 - Write a program and ask the user to enter a few numbers separated by a hyphen.
+            // If the user simply presses Enter, without supplying an input, exit immediately; otherwise, check to see if there are duplicates.
+            // If so, display "Duplicate" on the console.
+
+            while (true)
             {
-                message = currentNumber > previousNumber ? "Consecutive" : "Not Consecutive";
-                previousNumber = currentNumber;
-            }
+                Console.WriteLine("Please enter a few numbers separated by a hypen.");
+                var input = Console.ReadLine();
 
-            Console.WriteLine($"The numbers you entered are {message}");
+                if (string.IsNullOrWhiteSpace(input))
+                    break;
+
+                var numbers = input.Split('-').Select(n => Convert.ToInt32(n)).ToList().ToList();
+                var previous = 0;
+                foreach (var number in numbers)
+                {
+                    if (previous == number)
+                        Console.WriteLine("Duplicate");
+
+                    previous = number;
+                }                    
+            }            
         }
     }
 }
