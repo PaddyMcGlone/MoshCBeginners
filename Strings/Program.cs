@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -65,24 +66,33 @@ namespace Strings
             // If the user simply presses Enter, without supplying an input, exit immediately; otherwise, check to see if there are duplicates.
             // If so, display "Duplicate" on the console.
 
-            while (true)
-            {
-                Console.WriteLine("Please enter a few numbers separated by a hypen.");
-                var input = Console.ReadLine();
+            //while (true)
+            //{
+            //    Console.WriteLine("Please enter a few numbers separated by a hypen.");
+            //    var input = Console.ReadLine();
 
-                if (string.IsNullOrWhiteSpace(input))
-                    break;
+            //    if (string.IsNullOrWhiteSpace(input))
+            //        break;
 
-                var numbers = input.Split('-').Select(n => Convert.ToInt32(n)).ToList().ToList();
-                var previous = 0;
-                foreach (var number in numbers)
-                {
-                    if (previous == number)
-                        Console.WriteLine("Duplicate");
+            //    var numbers = input.Split('-').Select(n => Convert.ToInt32(n)).ToList().ToList();
+            //    var previous = 0;
+            //    foreach (var number in numbers)
+            //    {
+            //        if (previous == number)
+            //            Console.WriteLine("Duplicate");
 
-                    previous = number;
-                }                    
-            }            
+            //        previous = number;
+            //    }                    
+            //}
+
+            // 3 - Write a program and ask the user to enter a time value in the 24 - hour time format(e.g. 19:00).
+            // A valid time should be between 00:00 and 23:59.If the time is valid, display "Ok";
+            // otherwise, display "Invalid Time".If the user doesn't provide any values, consider it as invalid time.
+            Console.WriteLine("Enter a time value in twenty four hour format.");
+            DateTime time;
+            var result = DateTime.TryParseExact(Console.ReadLine(), "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out time);
+
+            Console.WriteLine(result ? "Ok" : "Not Ok");
         }
     }
 }
