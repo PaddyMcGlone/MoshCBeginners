@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateAndTimes", "DateAndTime
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{50519FD6-F178-4BA3-A1FF-275BC4A14D54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "Files\Files.csproj", "{946E4BF6-8100-4C48-BD73-AFB015794957}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -55,5 +57,9 @@ Global
 		{50519FD6-F178-4BA3-A1FF-275BC4A14D54}.Debug|x86.Build.0 = Debug|x86
 		{50519FD6-F178-4BA3-A1FF-275BC4A14D54}.Release|x86.ActiveCfg = Release|x86
 		{50519FD6-F178-4BA3-A1FF-275BC4A14D54}.Release|x86.Build.0 = Release|x86
+		{946E4BF6-8100-4C48-BD73-AFB015794957}.Debug|x86.ActiveCfg = Debug|x86
+		{946E4BF6-8100-4C48-BD73-AFB015794957}.Debug|x86.Build.0 = Debug|x86
+		{946E4BF6-8100-4C48-BD73-AFB015794957}.Release|x86.ActiveCfg = Release|x86
+		{946E4BF6-8100-4C48-BD73-AFB015794957}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
