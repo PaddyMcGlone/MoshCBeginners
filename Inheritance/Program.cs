@@ -36,6 +36,18 @@ namespace Inheritance
             {
                 //... Do some work
             }
+
+            // In C# - Upcasting is implicit, theres no need to define the resulting type.
+            // Downcasting however is explicit and you need to define the resulting type.
+
+
+            // C# types
+            // There are two types within .Net
+            // 1.Values types - all primitive types and are stored on the stack (managed reserved memory).
+            // 2.Reference type - All classes instances, these are reside within the heap.
+
+
+            // Boxing
         }
     }
 }
