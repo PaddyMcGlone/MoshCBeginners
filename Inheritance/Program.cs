@@ -48,6 +48,17 @@ namespace Inheritance
 
 
             // Boxing
+            // This is the process of converting a value type to an class instance (object).
+
+            int number = 100; // Value type stored in the stack
+            object myObject = number; // Value type moved to clr then stored as object on the heap.
+
+            // Unboxing
+            // This is a process of taking an object from the heap and converting to variable on the stack
+            object obj = 10;
+            int newNumber = (int)obj;
+
+
         }
     }
 }
