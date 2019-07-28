@@ -54,4 +54,8 @@ namespace Polymorphisim
             Console.WriteLine("Adding new implementation details.");
         }
     }
+
+    // What is a sealed class?
+    // A sealed class in .Net prevents other classes from inheriting this class. It seals its behaviour.
+    // A seal is like the .pdf version of a class.
 }
