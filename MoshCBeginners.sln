@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "Files\Files.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{44178CDD-29F3-4428-9682-73E7492E68DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphisim", "Polymorphisim\Polymorphisim.csproj", "{9DCBD469-ED68-462E-A9EB-F3DF20F311F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -67,5 +69,9 @@ Global
 		{44178CDD-29F3-4428-9682-73E7492E68DB}.Debug|x86.Build.0 = Debug|x86
 		{44178CDD-29F3-4428-9682-73E7492E68DB}.Release|x86.ActiveCfg = Release|x86
 		{44178CDD-29F3-4428-9682-73E7492E68DB}.Release|x86.Build.0 = Release|x86
+		{9DCBD469-ED68-462E-A9EB-F3DF20F311F4}.Debug|x86.ActiveCfg = Debug|x86
+		{9DCBD469-ED68-462E-A9EB-F3DF20F311F4}.Debug|x86.Build.0 = Debug|x86
+		{9DCBD469-ED68-462E-A9EB-F3DF20F311F4}.Release|x86.ActiveCfg = Release|x86
+		{9DCBD469-ED68-462E-A9EB-F3DF20F311F4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
