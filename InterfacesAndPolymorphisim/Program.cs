@@ -71,6 +71,7 @@ namespace InterfacesAndPolymorphisim
             sendMessage();            
         }
 
+        // This is the polymorphic code, at runtime the compiler will decide which type of messaging to call.
         private void sendMessage()
         {
             foreach (var type in messagings)
