@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphisim", "Polymorphi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{50EF2BF9-7A8D-461B-9056-C17444F69232}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesAndPolymorphisim", "InterfacesAndPolymorphisim\InterfacesAndPolymorphisim.csproj", "{B327D917-ED9B-406C-BDB5-4FB2A47DE42A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -79,5 +81,9 @@ Global
 		{50EF2BF9-7A8D-461B-9056-C17444F69232}.Debug|x86.Build.0 = Debug|x86
 		{50EF2BF9-7A8D-461B-9056-C17444F69232}.Release|x86.ActiveCfg = Release|x86
 		{50EF2BF9-7A8D-461B-9056-C17444F69232}.Release|x86.Build.0 = Release|x86
+		{B327D917-ED9B-406C-BDB5-4FB2A47DE42A}.Debug|x86.ActiveCfg = Debug|x86
+		{B327D917-ED9B-406C-BDB5-4FB2A47DE42A}.Debug|x86.Build.0 = Debug|x86
+		{B327D917-ED9B-406C-BDB5-4FB2A47DE42A}.Release|x86.ActiveCfg = Release|x86
+		{B327D917-ED9B-406C-BDB5-4FB2A47DE42A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
