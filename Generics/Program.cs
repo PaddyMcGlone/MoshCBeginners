@@ -16,7 +16,7 @@ namespace Generics
             return a.CompareTo(b) > 0 ? a : b;
         }
 
-        // In this method below, we are creating a new instance of the type and returning it.
+        // In this method below, we are creating a new instance of the type and returning it.   
         public T CreateANewInstance()
         {
             return new T();
