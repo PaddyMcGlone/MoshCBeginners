@@ -3,7 +3,7 @@
 namespace Generics
 {
     // Creating a Generic class with Icomparable constraint
-    public class Utilities<T> where T : IComparable
+    public class Utilities<T> where T : IComparable, new()
     {
         public int Max(int a, int b)
         {
@@ -14,6 +14,12 @@ namespace Generics
         public T Max(T a, T b)
         {
             return a.CompareTo(b) > 0 ? a : b;
+        }
+
+        // In this method below, we are creating a new instance of the type and returning it.
+        public T CreateANewInstance()
+        {
+            return new T();
         }
     }
 
@@ -65,7 +71,7 @@ namespace Generics
 
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main(string[] args)  
         {
             // Testing the struc constraint
             var number = new Nullable<int>(5);
