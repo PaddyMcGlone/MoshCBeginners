@@ -23,7 +23,16 @@ namespace Delegates
             // Add another filter into our process
             handler += filters.AutoFilter;
 
+            // Adding our new red eye reduction filter
+            handler += ApplyRedEyeReduction; // Note the lack of Filters. prefix
+
             processor.Process(photo, handler);
+        }
+
+        // Some new filter which the dev has added
+        static void ApplyRedEyeReduction(Photo photo)
+        {
+            Console.WriteLine("Applying Red Eye Reduction.");
         }
     }
 }
