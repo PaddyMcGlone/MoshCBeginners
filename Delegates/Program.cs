@@ -19,6 +19,10 @@ namespace Delegates
 
             // A new delegate
             PhotoProcessor.PhotoFilterHander handler = filters.GreyScale;
+
+            // Add another filter into our process
+            handler += filters.AutoFilter;
+
             processor.Process(photo, handler);
         }
     }
