@@ -1,11 +1,11 @@
 ﻿namespace Delegates
-{
-    // Creating a delegate, which will hold the pointer address
-    // of all the methods that we wish to call.
-    public delegate void PhotoFilterHander(Photo photo);
-
+{    
     public class PhotoProcessor
     {
+        // Creating a delegate, which will hold the pointer address
+        // of all the methods that we wish to call.
+        public delegate void PhotoFilterHander(Photo photo);
+
         // Below we pass the delegate into our method as a param.
         public void Process(Photo photo, PhotoFilterHander photoFilterHander)
         {
