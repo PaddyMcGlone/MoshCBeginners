@@ -6,7 +6,8 @@ namespace LambdaExpressions
     {
         public static void Main()
         {
-            Console.WriteLine(CalculateSquare(5));
+            Func<int, int> square = number => number * number;
+            Console.WriteLine(square(5));            
         }
 
         public static int CalculateSquare(int number)
