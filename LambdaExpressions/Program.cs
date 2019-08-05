@@ -4,9 +4,14 @@ namespace LambdaExpressions
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(CalculateSquare(5));
+        }
+
+        public static int CalculateSquare(int number)
+        {
+            return number * number;
         }
     }
 }
