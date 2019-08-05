@@ -4,15 +4,13 @@ namespace LambdaExpressions
 {
     class MainClass
     {
+        private const int _factor = 5;
+
         public static void Main()
         {
-            Func<int, int> square = number => number * number;
-            Console.WriteLine(square(5));            
-        }
-
-        public static int CalculateSquare(int number)
-        {
-            return number * number;
-        }
+            // Making use of the private constant defined earlier.
+            Func<int, int> square = n => n * _factor;
+            Console.WriteLine(square(5));
+        }        
     }
 }
