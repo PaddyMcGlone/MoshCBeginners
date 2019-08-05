@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{5557E92B-E0A5-4698-9D9B-97184B6DEE1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressions", "LambdaExpressions\LambdaExpressions.csproj", "{45C64BCE-7333-4604-A00F-F2E4A1050064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -97,5 +99,9 @@ Global
 		{5557E92B-E0A5-4698-9D9B-97184B6DEE1D}.Debug|x86.Build.0 = Debug|x86
 		{5557E92B-E0A5-4698-9D9B-97184B6DEE1D}.Release|x86.ActiveCfg = Release|x86
 		{5557E92B-E0A5-4698-9D9B-97184B6DEE1D}.Release|x86.Build.0 = Release|x86
+		{45C64BCE-7333-4604-A00F-F2E4A1050064}.Debug|x86.ActiveCfg = Debug|x86
+		{45C64BCE-7333-4604-A00F-F2E4A1050064}.Debug|x86.Build.0 = Debug|x86
+		{45C64BCE-7333-4604-A00F-F2E4A1050064}.Release|x86.ActiveCfg = Release|x86
+		{45C64BCE-7333-4604-A00F-F2E4A1050064}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
