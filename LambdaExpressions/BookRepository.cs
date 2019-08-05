@@ -8,9 +8,9 @@ namespace LambdaExpressions
         {
             return new List<Book>
             {
-                new Book{Title = "VW Transporters"},
-                new Book{Title = "VanLife"},
-                new Book{Title = "Van detailing"}
+                new Book{Title = "VW Transporters", Price = 8},
+                new Book{Title = "VanLife", Price = 12},
+                new Book{Title = "Van detailing", Price = 15}
             };
         }
     }
