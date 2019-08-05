@@ -22,7 +22,7 @@ namespace LambdaExpressions
 
             // Add a Lambda expression instead
             var cheapbooks = books.FindAll(b => b.Price < 10);
-
+                
             foreach (var book in cheapbooks)
                 Console.WriteLine(book.Title);
         }
