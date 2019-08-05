@@ -18,15 +18,18 @@ namespace LambdaExpressions
             var books = repository.GetBooks();
 
             // Call a predicate to return the books
-            var cheapbooks = books.FindAll(FindCheapBooks);
+            // var cheapbooks = books.FindAll(FindCheapBooks);
+
+            // Add a Lambda expression instead
+            var cheapbooks = books.FindAll(b => b.Price < 10);
 
             foreach (var book in cheapbooks)
                 Console.WriteLine(book.Title);
         }
 
-        public static bool FindCheapBooks(Book book)
-        {
-            return book.Price < 10;
-        }
+        //public static bool FindCheapBooks(Book book)
+        //{
+        //    return book.Price < 10;
+        //}
     }
 }
