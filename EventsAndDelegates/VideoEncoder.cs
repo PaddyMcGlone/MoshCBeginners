@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace EventsAndDelegates
 {
@@ -8,9 +9,10 @@ namespace EventsAndDelegates
         {
         }
 
-        internal void Encode()
+        internal void Encode(Video video)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Writing video {video.Title}...");
+            Thread.Sleep(3000);
         }
     }
 }
