@@ -21,6 +21,13 @@ namespace EventsAndDelegates
         // 2. Event
         public event VideoEnocderEventHandler VideoEncoded;
 
+        // 3. Raise the event via a method
+        // Convention states they should be marked as protected, virtual and named with 'on'
+        protected virtual void OnVideoEncoded()
+        {
+
+        }
+
         internal void Encode(Video video)
         {
             Console.WriteLine($"Writing video {video.Title}...");
