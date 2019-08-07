@@ -38,6 +38,7 @@
     <Compile Include="VideoEncoder.cs" />
     <Compile Include="MailService.cs" />
     <Compile Include="WhatsAppService.cs" />
+    <Compile Include="VideoArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
