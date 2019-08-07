@@ -4,9 +4,10 @@ namespace EventsAndDelegates
 {
     public class WhatsAppService
     {
-        public void VideoEnocderEventHandler(object source, EventArgs args)
+        public void VideoEnocderEventHandler(object source, VideoArgs args)
         {
-            Console.WriteLine("WhatsAppService: Sending a WhatsApp message.");
+            Console.WriteLine($"WhatsAppService: Encoding video - {args.video.Title}.");
         }
     }
 }
+    

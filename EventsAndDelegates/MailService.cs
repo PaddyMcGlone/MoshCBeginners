@@ -4,9 +4,9 @@ namespace EventsAndDelegates
 {
     public class MailService
     {
-        public void VideoEnocderEventHandler(object source, EventArgs args)
+        public void VideoEnocderEventHandler(object source, VideoArgs args)
         {
-            Console.WriteLine("Sending an email...");
+            Console.WriteLine($"MailService: Encoding video {args.video.Title}");
         }
     }
 }
