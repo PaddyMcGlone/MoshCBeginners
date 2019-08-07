@@ -1,23 +1,16 @@
-﻿using System;
-
-namespace EventsAndDelegates
+﻿namespace EventsAndDelegates
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
             var video1 = new Video { Title = "Van highlights" };
-            var encoder = new VideoEncoder();
+            var encoder = new VideoEncoder(); // Publisher
+            var mailService = new MailService(); // Subscriber
+
+            encoder.VideoEncoded += mailService.VideoEnocderEventHandler; // subcribe to the event
 
             encoder.Encode(video1);
-        }
-    }
-
-    public class MailService
-    {
-        public void VideoEnocderEventHandler(object source, EventArgs args)
-        {
-            Console.WriteLine("Sending an email...");
         }
     }
 }
