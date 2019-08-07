@@ -12,4 +12,12 @@ namespace EventsAndDelegates
             encoder.Encode(video1);
         }
     }
+
+    public class MailService
+    {
+        public void VideoEnocderEventHandler(object source, EventArgs args)
+        {
+            Console.WriteLine("Sending an email...");
+        }
+    }
 }
