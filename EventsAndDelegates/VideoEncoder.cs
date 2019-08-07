@@ -25,13 +25,18 @@ namespace EventsAndDelegates
         // Convention states they should be marked as protected, virtual and named with 'on'
         protected virtual void OnVideoEncoded()
         {
-
+            // We check if the video encoded has subscribers
+            if (VideoEncoded != null)
+                VideoEncoded(this, EventArgs.Empty); // Create the event, passing empty args
         }
 
         internal void Encode(Video video)
         {
             Console.WriteLine($"Writing video {video.Title}...");
             Thread.Sleep(3000);
+
+            // This will alert of the subscribers that the event has occured.
+            OnVideoEncoded();
         }
     }
 }
