@@ -12,6 +12,7 @@ namespace ExtensionMethods
             if (numberOfWords == 0)
                 return "";
 
+            // Adding a .Take() to lift the fist number of words.
             return String.Join(" ", str.Split(' ').Take(numberOfWords));
         }
     }
