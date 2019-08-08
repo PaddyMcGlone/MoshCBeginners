@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressions", "Lambda
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegates\EventsAndDelegates.csproj", "{BDB86F8D-96A8-4D95-B756-9CADA33A10AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{0BCC2225-5993-4EB8-888E-EC506F3B3891}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -109,5 +111,9 @@ Global
 		{BDB86F8D-96A8-4D95-B756-9CADA33A10AE}.Debug|x86.Build.0 = Debug|x86
 		{BDB86F8D-96A8-4D95-B756-9CADA33A10AE}.Release|x86.ActiveCfg = Release|x86
 		{BDB86F8D-96A8-4D95-B756-9CADA33A10AE}.Release|x86.Build.0 = Release|x86
+		{0BCC2225-5993-4EB8-888E-EC506F3B3891}.Debug|x86.ActiveCfg = Debug|x86
+		{0BCC2225-5993-4EB8-888E-EC506F3B3891}.Debug|x86.Build.0 = Debug|x86
+		{0BCC2225-5993-4EB8-888E-EC506F3B3891}.Release|x86.ActiveCfg = Release|x86
+		{0BCC2225-5993-4EB8-888E-EC506F3B3891}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
