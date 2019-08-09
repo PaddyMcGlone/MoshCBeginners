@@ -19,9 +19,14 @@ namespace Linq
                                select b.Title;
 
             // Linq Extension Methods
-            var cheapBooks = books.Where(b => b.Price < 10).OrderBy(b => b.Title).Select(b => b.Title);
+            var cheapBooks = books
+                                .Where(b => b.Price < 10)
+                                .OrderBy(b => b.Title)
+                                .Select(b => b.Title);
 
-            var skippedBooks = books.Skip(1).Take(1);
+            var skippedBooks = books
+                                .Skip(1)
+                                .Take(1);
 
 
             //foreach (var book in cheapBooks)
