@@ -6,7 +6,11 @@ namespace NullableTypes
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Value type cannot hold a null value
+            //DateTime dateTime = null;
+
+            // Adding the Nullable<> prefix allows the null value to be held.
+            Nullable<DateTime> dateTime = null;
         }
     }
 }
