@@ -11,6 +11,10 @@ namespace NullableTypes
 
             // Adding the Nullable<> prefix allows the null value to be held.
             Nullable<DateTime> dateTime = null;
+
+            Console.WriteLine(dateTime.GetValueOrDefault());
+            Console.WriteLine(dateTime.HasValue);
+            Console.WriteLine(dateTime.Value);
         }
     }
 }
