@@ -11,7 +11,11 @@ namespace Dynamics
             myString = 100;
 
 
-            _ = Console.WriteLine(myString);
+            dynamic a = 10;
+            dynamic b = 100;
+
+            // At compile time, result will be set to type dynamic.
+            var result = b - a;        
         }
     }
 }
