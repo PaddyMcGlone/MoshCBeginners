@@ -6,7 +6,12 @@ namespace Dynamics
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // A simple example of dynamic types
+            dynamic myString = "PaddyMcGlone";
+            myString = 100;
+
+
+            _ = Console.WriteLine(myString);
         }
     }
 }
