@@ -13,6 +13,10 @@ namespace ExceptionHandling
 
                 Console.WriteLine($"The result: {result}");
             }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("You cannot divide by zero.");
+            }
             catch (Exception ex)
             {
                 Console.WriteLine("Sorry an unexspected exception occurred.");
