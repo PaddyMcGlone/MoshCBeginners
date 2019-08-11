@@ -6,12 +6,18 @@ namespace ExceptionHandling
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            try
+            {
+                var calculator = new Calculator();
+                var result = calculator.Divide(5, 0);
 
-        public int Divide(int inumerator, int demoninator)
-        {
-            return inumerator / demoninator;
-        }
+                Console.WriteLine($"The result: {result}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Sorry an unexspected exception occurred.");
+            }
+            
+        }        
     }
 }
