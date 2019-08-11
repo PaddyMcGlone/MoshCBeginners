@@ -8,5 +8,10 @@ namespace ExceptionHandling
         {
             Console.WriteLine("Hello World!");
         }
+
+        public int Divide(int inumerator, int demoninator)
+        {
+            return inumerator / demoninator;
+        }
     }
 }
