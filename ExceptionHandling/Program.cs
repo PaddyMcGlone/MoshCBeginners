@@ -49,10 +49,11 @@ namespace ExceptionHandling
             try
             {
                 var youTubeApi = new YouTubeApi();
+                youTubeApi.GetUserVideos();                    
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
             
         }        
