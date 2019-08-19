@@ -24,24 +24,35 @@ namespace ExceptionHandling
             //    Console.WriteLine("Sorry an unexspected exception occurred.");
             //}
 
-            StreamReader reader = null;
+            //Below is the StreamReader exception example
+            //StreamReader reader = null;
 
+            //try
+            //{
+            //    reader = new StreamReader(@"C:\Documents\sampletext.txt");
+            //    var text = reader.ReadToEnd();
+
+            //   throw new Exception("An exception has occured!");
+
+            //}
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine($"A problem has occured : {ex.Message}.");
+            //}
+            //finally
+            //{
+            //    if (reader != null)                
+            //        reader.Dispose();
+            //}
+
+            // Creating a YouTube exception
             try
             {
-                reader = new StreamReader(@"C:\Documents\sampletext.txt");
-                var text = reader.ReadToEnd();
-
-               throw new Exception("An exception has occured!");
-
+                var youTubeApi = new YouTubeApi();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Console.WriteLine($"A problem has occured : {ex.Message}.");
-            }
-            finally
-            {
-                if (reader != null)                
-                    reader.Dispose();
+
             }
             
         }        
