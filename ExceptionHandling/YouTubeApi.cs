@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ExceptionHandling
 {
@@ -9,6 +10,8 @@ namespace ExceptionHandling
             try
             {
                 // Do some work here...
+
+                throw new Exception("500 server error");
             }
             catch (System.Exception ex)
             {
