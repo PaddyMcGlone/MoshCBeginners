@@ -24,19 +24,24 @@ namespace ExceptionHandling
             //    Console.WriteLine("Sorry an unexspected exception occurred.");
             //}
 
-            var reader = new StreamReader("C:\Documents\sampletext.txt");
+            StreamReader reader = null;
 
             try
             {
-               var text = reader.ReadToEnd();
+                reader = new StreamReader(@"C:\Documents\sampletext.txt");
+                var text = reader.ReadToEnd();
+
+               throw new Exception("An exception has occured!");
+
             }
             catch(Exception ex)
             {
-                Console.WriteLine("A problem has occured.");
+                Console.WriteLine($"A problem has occured : {ex.Message}.");
             }
             finally
             {
-                reader.Dispose();
+                if (reader != null)                
+                    reader.Dispose();
             }
             
         }        
