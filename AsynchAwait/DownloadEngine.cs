@@ -32,5 +32,11 @@ namespace AsynchAwait
                 await streamWriter.WriteAsync(html);
             }
         }
+
+        public async Task<string> GetHtml(string url)
+        {
+            var client = new WebClient();
+            return await client.DownloadStringTaskAsync(url);
+        }
     }
 }
