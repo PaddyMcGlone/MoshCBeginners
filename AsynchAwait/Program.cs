@@ -4,12 +4,15 @@ namespace AsynchAwait
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             var engine = new DownloadEngine();
             Console.WriteLine("Doing the first action, next i will download the page");
+
             engine.DownloadHtml(@"http://www.google.com");
+
             Console.WriteLine("The page has been downloaded!");
+
             Console.WriteLine("All done");
         }
     }
