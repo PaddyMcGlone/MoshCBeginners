@@ -9,7 +9,8 @@ namespace AsynchAwait
             var engine = new DownloadEngine();
             Console.WriteLine("Doing the first action, next i will download the page");
 
-            engine.DownloadHtml(@"http://www.google.com");
+            //engine.DownloadHtml(@"https://www.thetimes.co.uk/");
+            engine.DownloadHtmlAsync(@"https://www.thetimes.co.uk/");
 
             Console.WriteLine("The page has been downloaded!");
 
