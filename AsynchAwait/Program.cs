@@ -6,7 +6,8 @@ namespace AsynchAwait
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var engine = new DownloadEngine();
+            engine.DownloadHtml(@"http://www.google.com");
         }
     }
 }
