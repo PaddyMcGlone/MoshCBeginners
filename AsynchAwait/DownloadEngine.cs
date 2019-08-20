@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Net;
+using System.Threading;
 
 namespace AsynchAwait
 {
@@ -9,6 +10,8 @@ namespace AsynchAwait
         {
             var client = new WebClient();
             var html = client.DownloadString(url);
+
+            Thread.Sleep(5000);
 
             using (var streamWriter = new StreamWriter(@"/Users/patrickmcglone/Documents/html.txt"))
             {
